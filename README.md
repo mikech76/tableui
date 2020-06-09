@@ -1,19 +1,5 @@
 # tableui
 
-## Project setup
-```
-npm install
-```
+#### Тестовое задание Vue.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://paper.dropbox.com/doc/Vue.js-GdUBmChbMHVOrnrMdsu3j 

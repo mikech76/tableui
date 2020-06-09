@@ -1,0 +1,61 @@
+// модальное окно Confirm
+$bg-color: #fff;
+
+// кнопка селект
+.dropdown-select-expanded {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+}
+
+// выпадающее меню ul
+.select-expanded {
+  z-index: 1000;
+  overflow-y: auto;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: -0%;
+
+  display: flex;
+  flex-direction: column;
+
+  max-height: 250px;
+  min-width: 100%;
+
+  background-color: $bg-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+
+  // пункты меню li
+  &__item {
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+
+    padding: 6px 10px;
+
+    // наведение на пункт
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+
+    .checkbox-on, .checkbox-off {
+      margin-right: 8px;
+    }
+  }
+
+  // пункт Выделить все
+  &_all {
+    font-weight: 600;
+    padding-top: 14px;
+  }
+}
+
+// анимация раскрытия
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

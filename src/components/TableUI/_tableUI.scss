@@ -1,0 +1,109 @@
+// модальное окно Confirm
+$bg-color: #FFF;
+$bg-hover-color: rgba(0, 161, 30, 0.07);
+$border-color: #C6CBD4;
+$order-color: #00A11E;
+$bg-even-color: $bg-color;
+$bg-odd-color: #F8F9FA;
+
+.tableui { // table
+
+  table {
+    border-spacing: 0 0;
+    width: 100%;
+  }
+
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  // Панель
+  &__panel { // caption>div
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 33px;
+    margin-bottom: 15px;
+
+    // распорка
+    .space {
+      flex: 1 1 auto;
+    }
+
+    & > *:not(:first-child) {
+      padding: 0 0 0 10px;
+    }
+  }
+
+  /// заголовки
+  &__header > th { // tr > th
+    height: 57px;
+    background-color: $bg-color;
+    border-bottom: 1px solid $border-color;
+    padding: 0 17px;
+
+    font-weight: 600;
+  }
+
+  // чекбокс Select All
+  &__selectAll { // th
+    cursor: pointer;
+    width: 63px;
+  }
+
+  // заголовок столбца сортировки
+  &__order-column { // th div
+    cursor: pointer;
+
+    div {
+      display: flex;
+      align-items: center;
+      color: $order-color;
+    }
+  }
+
+  // столбец удаления
+  &__confirm-column {
+    width: 110px;
+  }
+
+  // строки
+  .row {
+    height: 49px;
+
+    // зебра
+    &:nth-of-type(even) {
+      background-color: $bg-even-color;
+    }
+
+    // зебра
+    &:nth-of-type(odd) {
+      background-color: $bg-odd-color;
+    }
+
+    // locked
+    &.locked td {
+      opacity: .2;
+    }
+
+    // hover
+    &:not(.locked ):hover td {
+      background-color: $bg-hover-color;
+    }
+
+    td {
+      padding: 0 17px;
+    }
+
+  }
+
+  // колонка select
+  th.select, td.select {
+    padding: 0 7px 0 32px;
+    cursor: pointer;
+  }
+
+}

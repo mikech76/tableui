@@ -1,0 +1,31 @@
+$bg-color: #EDEDED;
+$border-color: #C6CBD4;
+
+.container {
+  max-width: 1140px;
+  min-height: calc(100vh - 64px);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tableUIApp {
+  text-align: left;
+  padding: 32px 0 0 0;
+
+  .panel {
+    display: flex;
+    justify-content: space-between;
+
+    height: 57px;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 16px;
+
+    h1 {
+      font-family: Source Sans Pro, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

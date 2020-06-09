@@ -1,0 +1,42 @@
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  &.rubbish-bin {
+    background: url(./svg/rubbish-bin.svg) no-repeat center;
+  }
+
+  &.trash {
+    background: url(./svg/trash.svg) no-repeat center;
+  }
+
+  &.arrow-down {
+    background: url(./svg/arrow-down.svg) no-repeat center;
+  }
+
+  &.arrow-up {
+    background: url(./svg/arrow-up.svg) no-repeat center;
+  }
+
+  &.checkbox-on {
+    background: url(./svg/checkbox-on.svg) no-repeat center;
+  }
+
+  &.checkbox-off {
+    background: url(./svg/checkbox-off.svg) no-repeat center;
+  }
+
+  &.chevron-down {
+    background: url(./svg/chevron-down.svg) no-repeat center;
+  }
+
+  &.chevron-left {
+    background: url(./svg/chevron-left.svg) no-repeat center;
+  }
+
+  &.chevron-right {
+    background: url(./svg/chevron-right.svg) no-repeat center;
+  }
+}
+
