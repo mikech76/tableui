@@ -5,7 +5,7 @@
       <div class="panel">
         <h1>Table UI</h1>
 
-        <Btn v-if="errorMessage" error round :label="errorMessage"  @click="repeatQueries">test</Btn>
+        <Btn v-if="errorMessage" error round :label="errorMessage" @click="repeatQueries">test</Btn>
 
       </div>
 

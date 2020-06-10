@@ -99,9 +99,12 @@ export default {
 
       // сортировать все строки
       if (this.orderColumn) {
-        const ord = (a, b) => (this.orderColumn.order ? 1 : -1) * // asc/desc
-          (a[this.orderColumn.name] > b[this.orderColumn.name]) - (a[this.orderColumn.name] < b[this.orderColumn.name])
-          || (a.product > b.product) - (a.product < b.product); // + сортировка по имени
+        const ord = (a, b) =>
+          (this.orderColumn.order ? 1 : -1) * // asc/desc
+          (
+            (a[this.orderColumn.name] > b[this.orderColumn.name]) - (a[this.orderColumn.name] < b[this.orderColumn.name])
+            || (a.product > b.product) - (a.product < b.product)
+          ); // + сортировка по имени
 
         data.sort(ord);
       }
