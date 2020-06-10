@@ -2,7 +2,7 @@
   <div class="paginator">
     <Btn square icon="chevron-left" :disabled="this.value===1" @click="onPrev"/>
     <span class="paginator__label">{{label}}</span>
-    <Btn round disabled icon="chevron-right" :disabled="this.to===this.max" @click="onNext"/>
+    <Btn round icon="chevron-right" :disabled="this.to===this.max" @click="onNext"/>
   </div>
 </template>
 
